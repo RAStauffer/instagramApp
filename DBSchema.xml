@@ -15,7 +15,7 @@
     - Structure schemas
     -->
     <pma:structure_schemas>
-        <pma:database name="DB" collation="latin1_swedish_ci" charset="latin1">
+        <pma:database name="<DB>" collation="latin1_swedish_ci" charset="latin1">
             <pma:table name="instagramData">
                 CREATE TABLE `instagramData` (
                   `recID` int(255) NOT NULL AUTO_INCREMENT,
