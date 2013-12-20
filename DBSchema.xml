@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.0.8
+- http://www.phpmyadmin.net
+-
+- Host: localhost
+- Generation Time: Dec 20, 2013 at 05:27 AM
+- Server version: 5.1.72-cll
+- PHP Version: 5.3.17
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="http://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="DB" collation="latin1_swedish_ci" charset="latin1">
+            <pma:table name="instagramData">
+                CREATE TABLE `instagramData` (
+                  `recID` int(255) NOT NULL AUTO_INCREMENT,
+                  `media_id` varchar(255) NOT NULL,
+                  `url` varchar(255) NOT NULL,
+                  `c_time` varchar(255) NOT NULL,
+                  `user` varchar(255) NOT NULL,
+                  `userfullname` varchar(255) NOT NULL,
+                  `filter` varchar(2048) NOT NULL,
+                  `comment_count` varchar(255) NOT NULL,
+                  `caption` varchar(255) NOT NULL,
+                  `link` varchar(255) NOT NULL,
+                  `low_res` varchar(255) NOT NULL,
+                  `thumb` varchar(255) NOT NULL,
+                  PRIMARY KEY (`recID`)
+                ) ENGINE=MyISAM AUTO_INCREMENT=130 DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="persistEntries">
+                CREATE TABLE `persistEntries` (
+                  `id` int(10) NOT NULL AUTO_INCREMENT,
+                  `min_id` varchar(255) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+</pma_xml_export>
